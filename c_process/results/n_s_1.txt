@@ -1,0 +1,2 @@
+Number of primes = 17
+Number of divisions = 77

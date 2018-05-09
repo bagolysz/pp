@@ -1,0 +1,2 @@
+Number of primes = 15
+Number of divisions = 85

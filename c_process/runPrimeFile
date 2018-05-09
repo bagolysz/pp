@@ -1,0 +1,4 @@
+#!/bin/sh
+./primeFromFile 'n_rr_0.txt' & ./primeFromFile 'n_rr_1.txt' & ./primeFromFile 'n_rr_2.txt' & ./primeFromFile 'n_rr_3.txt' & ./primeFromFile 'n_rr_4.txt' & ./primeFromFile 'n_rr_5.txt' & ./primeFromFile 'n_rr_6.txt' & ./primeFromFile 'n_rr_7.txt' 
+./primeFromFile 'n_rrm_0.txt' & ./primeFromFile 'n_rrm_1.txt' & ./primeFromFile 'n_rrm_2.txt' & ./primeFromFile 'n_rrm_3.txt' & ./primeFromFile 'n_rrm_4.txt' & ./primeFromFile 'n_rrm_5.txt' & ./primeFromFile 'n_rrm_6.txt' & ./primeFromFile 'n_rrm_7.txt'
+./primeFromFile 'n_s_0.txt' & ./primeFromFile 'n_s_1.txt' & ./primeFromFile 'n_s_2.txt' & ./primeFromFile 'n_s_3.txt' & ./primeFromFile 'n_s_4.txt' & ./primeFromFile 'n_s_5.txt' & ./primeFromFile 'n_s_6.txt' & ./primeFromFile 'n_s_7.txt'

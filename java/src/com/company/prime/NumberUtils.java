@@ -5,10 +5,11 @@ import java.util.Random;
 
 class NumberUtils {
 
-    private static final int MAX_SWAPS = 15;
+    private static final int MAX_SWAPS = 10;
 
     private int[] primeNumbers;
     private int[] operations;
+
     private int numberOfSwaps;
 
     NumberUtils(int noOfWorkers) {
@@ -58,7 +59,7 @@ class NumberUtils {
 
         Random rn = new Random();
 
-        while (!isUniformlyShuffled(numbers, noOfIntervals, meanErrorThreshold) && numberOfSwaps < MAX_SWAPS) {
+        while (numberOfSwaps < MAX_SWAPS) {
             for (int i = 0; i < size; i++) {
                 int i1 = rn.nextInt(size);
                 int i2 = rn.nextInt(size);
@@ -70,7 +71,7 @@ class NumberUtils {
             numberOfSwaps++;
         }
 
-        return numberOfSwaps < MAX_SWAPS;
+        return isUniformlyShuffled(numbers, noOfIntervals, meanErrorThreshold);
     }
 
     void fillRoundRobin(int[] numbers, int noOfIntervals) {
@@ -84,9 +85,9 @@ class NumberUtils {
         }
     }
 
-    void fillRoundRobinModified(int[] numbers, int noOfIntervals, int maxNumber) {
+    void fillRoundRobinModified(int[] numbers, int noOfIntervals) {
         int first = 3;
-        int last = maxNumber % 2 == 0 ? maxNumber + 1 : maxNumber;
+        int last = 2 * numbers.length + 1;
         int size = numbers.length / noOfIntervals;
         for (int i = 0; i < size/2; i++) {
             for (int j = 0; j < noOfIntervals; j++) {
@@ -104,18 +105,18 @@ class NumberUtils {
     }
 
 
-    double getDivisionsVariance(List<Integer> divisions) {
+    double getDivisionsVariance(List<Integer> noOfOps) {
         double mean = 0.0;
         double variation = 0.0;
-        for (Integer d : divisions) {
+        for (Integer d : noOfOps) {
             mean += d;
         }
-        mean /= divisions.size();
+        mean /= noOfOps.size();
 
-        for (Integer d : divisions) {
+        for (Integer d : noOfOps) {
             variation += Math.abs(mean - d);
         }
-        return variation/divisions.size();
+        return variation/noOfOps.size();
     }
 
     int getPrimesOf(int workerNo) {

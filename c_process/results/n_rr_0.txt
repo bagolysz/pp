@@ -1,0 +1,2 @@
+Number of primes = 3
+Number of divisions = 31
