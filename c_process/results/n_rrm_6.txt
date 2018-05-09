@@ -1,0 +1,2 @@
+Number of primes = 3020
+Number of divisions = 581160

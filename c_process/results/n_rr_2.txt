@@ -1,2 +1,2 @@
-Number of primes = 25
-Number of divisions = 102
+Number of primes = 3
+Number of divisions = 31424

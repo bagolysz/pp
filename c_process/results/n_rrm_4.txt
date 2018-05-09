@@ -1,0 +1,2 @@
+Number of primes = 1621
+Number of divisions = 237447

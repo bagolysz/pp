@@ -1,2 +1,2 @@
-Number of primes = 25
-Number of divisions = 98
+Number of primes = 3005
+Number of divisions = 581158

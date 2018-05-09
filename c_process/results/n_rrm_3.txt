@@ -1,0 +1,2 @@
+Number of primes = 3022
+Number of divisions = 582334

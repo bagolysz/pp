@@ -1,2 +1,2 @@
-Number of primes = 18
-Number of divisions = 75
+Number of primes = 2613
+Number of divisions = 502383

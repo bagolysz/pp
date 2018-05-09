@@ -1,2 +1,2 @@
-Number of primes = 17
-Number of divisions = 77
+Number of primes = 2671
+Number of divisions = 511984
