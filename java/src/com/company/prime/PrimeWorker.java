@@ -48,7 +48,7 @@ public class PrimeWorker extends Thread {
         }
 
         int upperLimit = (int) Math.floor(Math.sqrt(x));
-        for (int i = 3; i < upperLimit; i = i + 2) {
+        for (int i = 3; i <= upperLimit; i = i + 2) {
             noOps++;
             if (x % i == 0) {
                 return new int[]{0, noOps};

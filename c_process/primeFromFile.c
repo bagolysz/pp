@@ -15,7 +15,7 @@ int isPrime(int x)
 	}
 
 	int upper = floor(sqrt(x));
-	for (int i = 3; i < upper; i = i + 2) {
+	for (int i = 3; i <= upper; i = i + 2) {
 		noOfDivs++;
 		if ((x % i) == 0)
 			return 0;

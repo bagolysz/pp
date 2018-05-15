@@ -98,7 +98,7 @@ int isPrime(int x, int *opCounter)
 	}
 
 	int upper = floor(sqrt(x));
-	for (int i = 3; i < upper; i = i + 2) {
+	for (int i = 3; i <= upper; i = i + 2) {
 		(*opCounter)++;
 		if ((x % i) == 0)
 			return 0;
@@ -150,7 +150,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 4) {
         printf("Error - invalid number of parameters!\n");
-        printf("Usage - choice(1,2,3) shuffle no_of_threads max_value\n");
+        printf("Usage - choice(1,2,3) no_of_threads max_value\n");
         return 1;
     }
     int choice;
@@ -169,12 +169,15 @@ int main(int argc, char **argv)
 
     switch(choice) {
     	case 1:
+    		printf("Random swaps:\n");
     		fillAndShuffle();
     		break;
     	case 2:
+    		printf("Round robin:\n");
     		fillRoundRobin();
     		break;
     	default:
+    		printf("End-end round robin:\n");
     		fillModifiedRoundRobin();
     }
     startThreads();
