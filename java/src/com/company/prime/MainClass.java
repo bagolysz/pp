@@ -8,8 +8,8 @@ import java.util.concurrent.CountDownLatch;
 
 public class MainClass {
 
-    private static final int MAX_NUMBERS = 200;
-    private static final int NO_THREADS = 1;
+    private static final int MAX_NUMBERS = 200000;
+    private static final int NO_THREADS = 3;
     private static final double MEAN_ERROR_THRESHOLD = 0.00008;
 
     public static void main(String[] args) {

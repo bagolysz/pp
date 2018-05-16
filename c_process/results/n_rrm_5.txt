@@ -1,2 +1,0 @@
-Number of primes = 3002
-Number of divisions = 581086

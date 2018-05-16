@@ -1,2 +1,0 @@
-Number of primes = 2564
-Number of divisions = 507759

@@ -1,2 +1,2 @@
-Number of primes = 3015
-Number of divisions = 580512
+Number of primes = 4491
+Number of divisions = 882442
